@@ -5,3 +5,21 @@
 .divs-facilidades {
     width: 325px;
 }
+
+.icons, .title-ease {
+    color: #DAFF01;
+}
+
+.btn-primary {
+    background-color: #9353FF;
+}
+
+.posicao{
+    top: 40%;
+}
+
+@media(max-width: 767px){
+    .posicao{
+        top:60%;
+    }
+}
