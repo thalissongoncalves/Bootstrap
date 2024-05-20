@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./" type="image/x-icon">
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <title>Serenatto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
-  </head>
-<body>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>Serenatto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body data-bs-theme="light">
 
   <header>
     <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
@@ -42,8 +43,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                    <label class="form-check-label" for="flexSwitchCheckDefault">Modo Noturno</label>
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo Noturno</label>
                   </div>
                 </a>
               </li>
@@ -115,7 +116,7 @@
 
       <div class="container text-center">
 
-        <div class="row">
+        <div class="row mx-0">
 
           <div class="card border-0 btn col-12 col-md-6 col-xl-4" data-bs-toggle="modal" data-bs-target="#modal-1">
             <img src="./assets/produtos-cafe-tradicional.png" class="card-img-top" alt="Xícara de café preto">
@@ -130,28 +131,28 @@
               <h3 class="card-text fw-bold">Cafés Especiais</h3>
             </div>
           </div>
-  
+
           <div class="card border-0 btn col-12 col-md-6 col-xl-4">
             <img src="./assets/produtos-vitaminas.png" class="card-img-top" alt="3 Copos de Vitaminas e frutas do lado do copo">
             <div class="card-body text-center">
               <h3 class="card-text fw-bold">Smoothies e Vitaminas</h3>
             </div>
           </div>
-  
+
           <div class="card border-0 btn col-12 col-md-6 col-xl-4">
             <img src="./assets/produtos-paes.png" class="card-img-top" alt="Cesta de pães e focaccias">
             <div class="card-body text-center">
               <h3 class="card-text fw-bold">Pães e Focaccias</h3>
             </div>
           </div>
-  
+
           <div class="card border-0 btn col-12 col-md-6 col-xl-4">
             <img src="./assets/produtos-doces.png" class="card-img-top" alt="Bolo de morango">
             <div class="card-body text-center">
               <h3 class="card-text fw-bold">Doces</h3>
             </div>
           </div>
-  
+
           <div class="card border-0 btn col-12 col-md-6 col-xl-4">
             <img src="./assets/produtos-salgados.png" class="card-img-top" alt="Torta de frango em cima de um prato marrom">
             <div class="card-body text-center">
@@ -209,6 +210,23 @@
     </section>
 
   </main>
+
+  <footer class="py-3 w-100 d-flex flex-column text-center">
+    <section class="container p-4 pb-0">
+      <a href="#!" class="btn">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="#!" class="btn">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#!" class="btn">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+    </section>
+    <div class="p-3">
+      <p>2023 <i class="bi bi-c-circle"></i> Desenvolvido por Thálisson G. | Projeto Ficticio sem fins comerciais</p>
+    </div>
+  </footer>
 
   <!-- canvas 1 -->
 
@@ -378,5 +396,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
   crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
